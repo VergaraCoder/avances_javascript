@@ -1,0 +1,46 @@
+.big{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(22, 182, 22, 0.706);
+    gap: 20px;
+    padding: 50px;
+}
+
+.container{
+    width: 17%;
+    height: 40%;
+    background-color: rgba(29, 28, 28, 0.95);
+    border: 2px solid black;
+    display: flex;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    color: white;
+}
+
+.container:hover{
+    transition: .5s;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+
+.figura{
+    display: none;
+}
+
+
+.voltea{
+    transform: rotateY(180deg);
+    transition: 1s;
+}
+
+
+.muestra{
+    display: block;
+}
+
