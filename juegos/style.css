@@ -7,6 +7,9 @@
     gap: 20px;
     padding: 50px;
 }
+body{
+    overflow-x: hidden;
+}
 
 .container{
     width: 17%;
@@ -28,19 +31,22 @@
     cursor: pointer;
 }
 
-
-.figura{
-    display: none;
+.voltea{
+    transform: rotateY(180deg);         /*Clase para que gire la carta*/
+    transition: .3s;
 }
 
 
-.voltea{
-    transform: rotateY(180deg);
-    transition: 1s;
+.figura{
+    scale: 0;
+    transition: 1s;         /*Clase para ocultar numeros*/
 }
 
 
 .muestra{
-    display: block;
+    scale: 1;
+    transition: 1s;
+    transform: rotateY(-180deg);
+    visibility: visible;           /*Clase para mostrar figuras*/
 }
 
